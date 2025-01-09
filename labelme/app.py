@@ -90,6 +90,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         super(MainWindow, self).__init__()
         self.setWindowTitle(__appname__)
+        # self.showMaximized()
 
         # Whether we need to save or not.
         self.dirty = False
@@ -1686,6 +1687,8 @@ class MainWindow(QtWidgets.QMainWindow):
             self.otherData = self.labelFile.otherData
         else:
             self.imageData = LabelFile.load_image_file(filename)
+            # c64_hash = get_c64_hash(filename)
+            self.otherData = {"c64-hash": "value"}
             if self.imageData:
                 self.imagePath = filename
             self.labelFile = None
