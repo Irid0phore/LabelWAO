@@ -38,7 +38,7 @@ exe = EXE(
     a.binaries,
     a.zipfiles,
     a.datas,
-    name='labelme',
+    name='LabelWAO',
     debug=False,
     strip=False,
     upx=True,

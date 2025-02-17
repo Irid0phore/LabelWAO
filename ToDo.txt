@@ -1,0 +1,2 @@
+(Done) Remove AI Mask Model and AI Prompt
+Change to only rectangles

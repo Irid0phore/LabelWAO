@@ -1,5 +1,5 @@
 import cv2
-from hashlib import sha256, hexdigestx
+import hashlib
 import numpy as np
 
 
