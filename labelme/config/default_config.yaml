@@ -8,7 +8,9 @@ keep_prev_contrast: false
 logger_level: info
 
 flags: null
-label_flags: null
+label_flags:
+  "[a-zA-Z]+":
+    - Already Counted?
 labels: null
 file_search: null
 sort_labels: true
@@ -31,7 +33,7 @@ shape:
   point_size: 8
 
 ai:
-  default: 'EfficientSam (accuracy)'
+  default: null
 
 # main
 flag_dock:
@@ -85,7 +87,7 @@ canvas:
 shortcuts:
   close: Ctrl+W
   open: Ctrl+O
-  open_dir: Ctrl+U
+  open_dir: Ctrl+Shift+O
   quit: Ctrl+Q
   save: Ctrl+S
   save_as: Ctrl+Shift+S
@@ -102,12 +104,12 @@ shortcuts:
   fit_width: Ctrl+Shift+F
 
   create_polygon: Ctrl+N
-  create_rectangle: Ctrl+R
+  create_rectangle: [Ctrl+R, R]
   create_circle: null
   create_line: null
   create_point: null
   create_linestrip: null
-  edit_polygon: Ctrl+J
+  edit_polygon: [Ctrl+J, Esc]
   delete_polygon: Delete
   duplicate_polygon: Ctrl+D
   copy_polygon: Ctrl+C

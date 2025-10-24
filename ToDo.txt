@@ -1,2 +1,7 @@
 (Done) Remove AI Mask Model and AI Prompt
-Change to only rectangles
+(Done) Change to only rectangles
+(Done) Add "Already Counted?" flag
+Add animal quantity
+Add difficult flag?
+Middle mouse drag to pan
+Change "polygons" to something else
