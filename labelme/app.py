@@ -1443,7 +1443,7 @@ class MainWindow(QtWidgets.QMainWindow):
 			flags[key] = flag
 		try:
 			imagePath = osp.relpath(self.imagePath, osp.dirname(filename))
-			imageData = self.imageData if self._config["store_data"] else None
+			imageData = None #self.imageData if self._config["store_data"] else None
 			if osp.dirname(filename) and not osp.exists(osp.dirname(filename)):
 				os.makedirs(osp.dirname(filename))
 			lf.save(
@@ -1807,9 +1807,9 @@ class MainWindow(QtWidgets.QMainWindow):
 		w = self.centralWidget().width() - 2.0
 		return w / self.canvas.pixmap.width()
 
-	def enableSaveImageWithData(self, enabled):
-		self._config["store_data"] = enabled
-		self.actions.saveWithImageData.setChecked(False)
+	# def enableSaveImageWithData(self, enabled):
+	# 	self._config["store_data"] = enabled
+	# 	self.actions.saveWithImageData.setChecked(False)
 
 	def closeEvent(self, event):
 		if not self.mayContinue():
